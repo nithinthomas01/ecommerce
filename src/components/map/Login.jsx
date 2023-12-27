@@ -14,16 +14,13 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      // Sending a POST request to the authentication endpoint with user credentials
       const response = await fetch('https://dummyjson.com/auth/login', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           username: username,
-          password: password
-        })
+          password: password,
+        }),
       });
 
       if (response.ok) {
@@ -31,11 +28,10 @@ const Login = () => {
         const data = await response.json();
         const loginToken = data.token;
         localStorage.setItem('loginToken', loginToken);
-        console.log('Login successful. Token stored:');
+        console.log('Login successful. Token stored:', loginToken);
         
         // Navigate to the home route after successful login
         navigate('/home');
-        console.log('After navigate function');
       } else {
         // If login fails, set an error message
         setLoginError('Invalid username or password');
