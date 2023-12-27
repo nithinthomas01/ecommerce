@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+Prerequisites
+List of software or dependencies required :---
+Docker
+
+getting started:
+to start run
+docker build -t image-name .  #this creteas a docker image with all the dependencies needed.
+
+docker run -p 3000:3000 image-name #this run the docker container and exposes the port 3000
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
