@@ -16,7 +16,7 @@ RUN npm install
 RUN npm run build
 
 # Expose the app's port (change 3000 to the port your React app uses, if different)
-EXPOSE 8085
+EXPOSE 3000
 
 # Define the command to run your app
 CMD ["npm", "start"]
