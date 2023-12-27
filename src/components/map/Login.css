@@ -1,0 +1,45 @@
+.login-container {
+  box-shadow: 0px 0px 10px 5px rgba(58, 19, 167, 0.2);  
+  width: 400px;
+
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .login-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-button {
+    padding: 10px 15px;
+    font-size: 16px;
+
+    color:black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+#loginContainer + .login-button:hover {
+    /* Change the shadow color to green when login button is hovered */
+    box-shadow: 0 0 10px 1px #00FF00; /* Replace this with your desired shadow color */
+    transition: box-shadow 0.3s ease-in-out; /* Transition for smooth effect */
+  }
